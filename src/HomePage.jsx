@@ -1,4 +1,6 @@
+/* eslint-env browser */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function HomePage() {
   return (
@@ -13,7 +15,7 @@ export function HomePage() {
         </p>
         <p>
           <a href="https://balbix.com/" rel="noopener noreferrer">
-            <img src="./i/balbix_logo.svg" alt="Balbix: CyberSecurity Posture Transformation (logo)" title="Balbix: CyberSecurity Posture Transformation" align="left" style={{ border: 0, margin: '0 20px 30px 0', width: 174, height: 41 }} />
+            <img src="/i/balbix_logo.svg" alt="Balbix: CyberSecurity Posture Transformation (logo)" title="Balbix: CyberSecurity Posture Transformation" align="left" style={{ border: 0, margin: '0 20px 30px 0', width: 174, height: 41 }} />
           </a>
           Currently working on solving companies' largest cybersecurity issues at <a href="https://balbix.com/" rel="noopener noreferrer">Balbix</a>.
           We build a next-generation Security Posture Transformation platform that provides with <a href="https://www.balbix.com/solutions/security-posture-visibility" rel="noopener noreferrer">100x better visibility of assets and vulnerabilities</a> and <a href="https://www.balbix.com/solutions/risk-based-vulnerability-management/" rel="noopener noreferrer">vulnerability management</a> on your corporate network.
@@ -108,9 +110,9 @@ export function HomePage() {
         <div className="row">
           <div className="one-half column">
             <h3><a href="#projects--dog-rescue-fostering" id="projects--dog-rescue-fostering" className="anchor" aria-hidden="true"><span className="octicon octicon-link"></span></a>Dog Rescue Fostering</h3>
-            <p>A web page documenting <a href="https://www.davidwortham.com/dogs/rescue-foster/" rel="noopener noreferrer">my volunteer efforts in fostering, training, and photographing dogs</a> for local non-profit animal rescues in my spare time.</p>
-            <p><a href="http://www.coppersdream.org/" rel="noopener noreferrer">Copper's Dream</a> is a foster-based non-profit animal rescue that saves pets from high-kill shelters in California.</p>
-            <p><a href="http://ilovefamilydog.org/" rel="noopener noreferrer">Family Dog Rescue</a> is a shelter-based non-profit dog rescue in San Francisco that saves family-friendly pets from California, Mexico, and other countries.</p>
+            <p>A web page documenting <Link to="/dogs/rescue-foster/">my volunteer efforts in fostering, training, and photographing dogs</Link> for local non-profit animal rescues in my spare time.</p>
+            <p><a href="https://www.coppersdream.org/" rel="noopener noreferrer">Copper's Dream</a> is a foster-based non-profit animal rescue that saves pets from high-kill shelters in California.</p>
+            <p><a href="https://ilovefamilydog.org/" rel="noopener noreferrer">Family Dog Rescue</a> is a shelter-based non-profit dog rescue in San Francisco that saves family-friendly pets from California, Mexico, and other countries.</p>
           </div>
           <div className="one-half column">
             <h3><a href="#projects--news-feed" id="projects--news-feed" className="anchor" aria-hidden="true"><span className="octicon octicon-link"></span></a>News Feed</h3>
@@ -125,37 +127,37 @@ export function HomePage() {
         <h2>Resources</h2>
         <p>My dumping ground for useful resources as I collect them.</p>
 
-        <ul style={{ display: 'none' }}>
+        <ul>
           <li>
-            <a href="./resources/cybersecurity/index.html"><strong>CyberSecurity Resources</strong></a>
+            <Link to="/resources/cybersecurity/"><strong>CyberSecurity Resources</strong></Link>
             <ul>
               <li>
-                <a href="./resources/cybersecurity/everyone/index.html">for everyone</a>.
+                <Link to="/resources/cybersecurity/everyone/">for everyone</Link>.
               </li>
               <li>
-                <a href="./resources/cybersecurity/developers/index.html">for software developers</a>.
+                <Link to="/resources/cybersecurity/developers/">for software developers</Link>.
               </li>
               <li>
-                <a href="./resources/cybersecurity/businesses/index.html">for businesses</a> (or journalists, or enthusiasts, etc).
+                <Link to="/resources/cybersecurity/businesses/">for businesses</Link> (or journalists, or enthusiasts, etc).
               </li>
             </ul>
           </li>
           <li>
-            <a href="./resources/programming/index.html"><strong>Programming Resources</strong></a>
+            <Link to="/resources/programming/"><strong>Programming Resources</strong></Link>
             <ul>
               <li>
-                <a href="./resources/programming/webdev/index.html">for web developers</a>.
+                <Link to="/resources/programming/webdev/">for web developers</Link>.
               </li>
             </ul>
           </li>
           <li>
-            <a href="./resources/economics/index.html"><strong>Understanding Classical and Behavioral Economics</strong></a>
+            <Link to="/resources/economics/"><strong>Understanding Classical and Behavioral Economics</strong></Link>
           </li>
           <li>
-            <a href="./resources/nonprofits/index.html"><strong>Non-Profit Organization Resources</strong></a> that I find. Make your limited resources go further by finding lesser known resources.
+            <Link to="/resources/nonprofits/"><strong>Non-Profit Organization Resources</strong></Link> that I find. Make your limited resources go further by finding lesser known grants, freebies, and tools.
           </li>
           <li>
-            <a href="./resources/charities/index.html"><strong>Charities that I support</strong> </a> and encourage you to consider.
+            <Link to="/resources/charities/"><strong>Charities that I support</strong> </Link> and encourage you to consider.
           </li>
         </ul>
       </section>

@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React from 'react';
-import './RescueFostersPage.css';
+
+import './DogsRescueFostersPage.css';
 
 const DOG_STATUS = {
   ADOPTED: 'adopted',
@@ -269,7 +270,7 @@ const dogs = dogsArray.reduce((allDogs, currDog) => {
   return allDogs;
 }, {});
 
-export function RescueFostersPage() {
+export function DogsRescueFostersPage() {
   return (
     <div className="container">
       <header>
@@ -277,7 +278,7 @@ export function RescueFostersPage() {
       </header>
 
       <header>
-        <p class="lead">David fosters adoptable dogs for <a href="http://coppersdream.org/" className="coppers-dream-colors">CoppersDream.org</a>, <a href="http://dpsrescue.com/" className="doggie-protective-service-colors">Doggie Protective Services (DPS)</a>, and <a href="http://ilovefamilydog.org/" className="family-dog-rescue-colors">Family Dog Rescue</a>, animal rescues in the San Francisco Bay Area.</p>
+        <p class="lead">David fosters adoptable dogs for <a href="https://coppersdream.org/" className="coppers-dream-colors">CoppersDream.org</a>, <a href="http://dpsrescue.com/" className="doggie-protective-service-colors">Doggie Protective Services (DPS)</a>, and <a href="https://ilovefamilydog.org/" className="family-dog-rescue-colors">Family Dog Rescue</a>, animal rescues in the San Francisco Bay Area.</p>
         <p>These rescue groups pull dogs from high risk animal shelters in Central California, delivers them to fosters, and the fosters take care of them while they wait to be adopted. Family Dog Rescue tends to pull more &quot;special needs&quot; dogs (including blind, deaf, both, skin infections, medical conditions, etc), northern breeds (Husky, Malmute, and wolf hybrids) and also pulls dogs from other countries including Mexico and Burma.</p>
         <p>David enjoys photographing and training his foster dogs.</p>
       </header>

@@ -262,13 +262,13 @@ dogsArray.sort((a, b) => {
   return 0;
 });
 
-const dogs = dogsArray.reduce((allDogs, currDog) => {
-  // create property `id` as a slug of property `name`
-  currDog.id = currDog.name.toLowerCase().replace(/[^a-z]+/, '_').replace(/^\s+|\s+$/g, '');
-  currDog.description = `${currDog.name}, the ${currDog.ageGuess}; ${currDog.weight} ${currDog.breedGuess}`;
-  allDogs[currDog.id] = currDog;
-  return allDogs;
-}, {});
+// const dogs = dogsArray.reduce((allDogs, currDog) => {
+//   // create property `id` as a slug of property `name`
+//   currDog.id = currDog.name.toLowerCase().replace(/[^a-z]+/, '_').replace(/^\s+|\s+$/g, '');
+//   currDog.description = `${currDog.name}, the ${currDog.ageGuess}; ${currDog.weight} ${currDog.breedGuess}`;
+//   allDogs[currDog.id] = currDog;
+//   return allDogs;
+// }, {});
 
 export function DogsRescueFostersPage() {
   return (
@@ -278,7 +278,7 @@ export function DogsRescueFostersPage() {
       </header>
 
       <header>
-        <p class="lead">David fosters adoptable dogs for <a href="https://coppersdream.org/" className="coppers-dream-colors">CoppersDream.org</a>, <a href="http://dpsrescue.com/" className="doggie-protective-service-colors">Doggie Protective Services (DPS)</a>, and <a href="https://ilovefamilydog.org/" className="family-dog-rescue-colors">Family Dog Rescue</a>, animal rescues in the San Francisco Bay Area.</p>
+        <p class="lead">David fosters adoptable dogs for <a href="https://coppersdream.org/" className="coppers-dream-colors" rel="noopener noreferrer">CoppersDream.org</a>, <a href="http://dpsrescue.com/" className="doggie-protective-service-colors" rel="noopener noreferrer">Doggie Protective Services (DPS)</a>, and <a href="https://ilovefamilydog.org/" className="family-dog-rescue-colors" rel="noopener noreferrer">Family Dog Rescue</a>, animal rescues in the San Francisco Bay Area.</p>
         <p>These rescue groups pull dogs from high risk animal shelters in Central California, delivers them to fosters, and the fosters take care of them while they wait to be adopted. Family Dog Rescue tends to pull more &quot;special needs&quot; dogs (including blind, deaf, both, skin infections, medical conditions, etc), northern breeds (Husky, Malmute, and wolf hybrids) and also pulls dogs from other countries including Mexico and Burma.</p>
         <p>David enjoys photographing and training his foster dogs.</p>
       </header>
@@ -303,7 +303,7 @@ export function DogsRescueFostersPage() {
               </p>
             </figcaption>
             <div class="rescue-dog--actions">
-              <a href={dog.imageUrl} class="glyphicon glyphicon-picture" title={`View the full size picture of ${dog.description}`} target="_blank"></a>
+              <a href={dog.imageUrl} class="glyphicon glyphicon-picture" title={`View the full size picture of ${dog.description}`} rel="noopener noreferrer" target="_blank">image</a>
             </div>
           </figure>
         </div>

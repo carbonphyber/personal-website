@@ -11,7 +11,7 @@ import './App.css';
 
 function ResourcesPage() {
   return (
-    <div>
+    <div class="container">
       <h1>Resources</h1>
     </div>
   );

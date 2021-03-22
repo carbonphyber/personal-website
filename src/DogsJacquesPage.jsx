@@ -16,8 +16,8 @@ export function DogsJacquesPage() {
       <p>Like most Australian Shepherds, he is extremely active. He is a regular at the local park trails and dog parks.</p>
 
       <figure>
-        <a href="/i/jacques/DSC_5840.JPG" target="_blank" title="Jacques, the Mini Australian Shepherd">
-          <img src="/i/jacques/DSC_5840.JPG" alt="Jacques, the Mini Australian Shepherd" style={{ width: '100%' }} />
+        <a href="/i/jacques/DSC_5840.jpg" target="_blank" title="Jacques, the Mini Australian Shepherd">
+          <img src="/i/jacques/DSC_5840.jpg" alt="Jacques, the Mini Australian Shepherd" style={{ width: '100%' }} />
         </a>
         <figcaption className="">
           <p>Occasionally, Jacques will idle in a chair.</p>
@@ -25,8 +25,8 @@ export function DogsJacquesPage() {
       </figure>
 
       <figure>
-        <a href="/i/jacques/DSC_2829.JPG" target="_blank" title="Jacques, digging in the dog park">
-          <img src="/i/jacques/DSC_2829.JPG" alt="Jacques, digging in the dog park" style={{ width: '100%' }} />
+        <a href="/i/jacques/DSC_2829.jpg" target="_blank" title="Jacques, digging in the dog park">
+          <img src="/i/jacques/DSC_2829.jpg" alt="Jacques, digging in the dog park" style={{ width: '100%' }} />
         </a>
         <figcaption className="">
           <p>No dirt clod is safe from Jacques. This is Jacques diggin in the dog park.</p>
@@ -34,8 +34,8 @@ export function DogsJacquesPage() {
       </figure>
 
       <figure>
-        <a href="/i/jacques/IMG_0417.JPG" target="_blank" title="Jacques, sleeping on a dog bed at work">
-          <img src="/i/jacques/IMG_0417.JPG" alt="Jacques, sleeping on a dog bed at work" style={{ width: '100%' }} />
+        <a href="/i/jacques/IMG_0417.jpg" target="_blank" title="Jacques, sleeping on a dog bed at work">
+          <img src="/i/jacques/IMG_0417.jpg" alt="Jacques, sleeping on a dog bed at work" style={{ width: '100%' }} />
         </a>
         <figcaption className="">
             <p>Working is hard work. Jacques occasionally shows up at work with his person.</p>
@@ -43,8 +43,8 @@ export function DogsJacquesPage() {
       </figure>
 
       <figure>
-        <a href="/i/jacques/IMG_0442.JPG" target="_blank" title="Jacques, in the driver's seat">
-          <img src="/i/jacques/IMG_0442.JPG" alt="Jacques, in the driver's seat" style={{ width: '100%' }} />
+        <a href="/i/jacques/IMG_0442.jpg" target="_blank" title="Jacques, in the driver's seat">
+          <img src="/i/jacques/IMG_0442.jpg" alt="Jacques, in the driver's seat" style={{ width: '100%' }} />
         </a>
         <figcaption className="">
           <p>&quot;Are we there yet?&quot; Jacques is in the driver's seat with the top down and is anxious to get moving again.</p>

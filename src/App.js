@@ -2,6 +2,7 @@
 import { Route, Switch } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 
+import { CharitiesPage } from './CharitiesPage';
 import { DogsJacquesPage } from './DogsJacquesPage';
 import { HomePage } from './HomePage';
 import { DogsRescueFostersPage } from './DogsRescueFostersPage';
@@ -58,7 +59,7 @@ function App() {
           <ResourcesPage />
         </Route>
         <Route exact path="/resources/charities/">
-          <ResourcesPage />
+          <CharitiesPage />
         </Route>
         <Route exact path="/">
           <HomePage />

@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders header text', () => {
   render(<App />);
-  const headerElement = screen.getByText(/David Wortham/i);
-  expect(headerElement).toBeInTheDocument();
+  const headerElement = screen.getByText(/David Wortham/i, { selector: 'h1' });
+  expect(Array.isArray(headerElement) ? headerElement[0] : headerElement).toBeInTheDocument();
 });

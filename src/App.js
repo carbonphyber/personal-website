@@ -1,11 +1,11 @@
 /* eslint-env browser */
-import { Route, Switch } from 'react-router';
+import { Route, Routes } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 
 import { CharitiesPage } from './CharitiesPage';
 import { DogsJacquesPage } from './DogsJacquesPage';
-import { HomePage } from './HomePage';
 import { DogsRescueFostersPage } from './DogsRescueFostersPage';
+import { HomePage } from './HomePage';
 import { ProgrammingWebdevPage } from './ProgrammingWebdevPage';
 
 import './App.css';
@@ -21,55 +21,27 @@ function ResourcesPage() {
 function App() {
   return (
     <HashRouter hashType="slash">
-      <Switch>
-        <Route exact path="/dogs/rescue-foster/">
-          <DogsRescueFostersPage />
-        </Route>
-        <Route exact path="/dogs/jacques/">
-          <DogsJacquesPage />
-        </Route>
-        <Route exact path="/dogs/">
-          <HomePage />
-        </Route>
-        <Route exact path="/resources/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/cybersecurity/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/cybersecurity/everyone/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/cybersecurity/developers/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/cybersecurity/businesses/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/programming/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/programming/webdev/">
-          <ProgrammingWebdevPage />
-        </Route>
-        <Route exact path="/resources/economics/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/nonprofits/">
-          <ResourcesPage />
-        </Route>
-        <Route exact path="/resources/charities/">
-          <CharitiesPage />
-        </Route>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="*">
+      <Routes>
+        <Route exact path="/dogs/rescue-foster/" element={<DogsRescueFostersPage />} />
+        <Route exact path="/dogs/jacques/" element={<DogsJacquesPage />} />
+        <Route exact path="/dogs/" element={<HomePage />} />
+        <Route exact path="/resources/" element={<ResourcesPage />} />
+        <Route exact path="/resources/cybersecurity/" element={<ResourcesPage />} />
+        <Route exact path="/resources/cybersecurity/everyone/" element={<ResourcesPage />} />
+        <Route exact path="/resources/cybersecurity/developers/" element={<ResourcesPage />} />
+        <Route exact path="/resources/cybersecurity/businesses/" element={<ResourcesPage />} />
+        <Route exact path="/resources/programming/" element={<ResourcesPage />} />
+        <Route exact path="/resources/programming/webdev/" element={<ProgrammingWebdevPage />} />
+        <Route exact path="/resources/economics/" element={<ResourcesPage />} />
+        <Route exact path="/resources/nonprofits/" element={<ResourcesPage />} />
+        <Route exact path="/resources/charities/" element={<CharitiesPage />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="*" element={(
           <div>
             <h1>404 Not Found</h1>
           </div>
-        </Route>
-      </Switch>
+        )} />
+      </Routes>
     </HashRouter>
   )
 }

@@ -2,10 +2,8 @@
 import React from 'react';
 
 import {
-  DOG_STATUS,
-  ORGANIZATION,
   dogsArray
-} from './data/DogsRescueFosters';
+} from '../data/DogsRescueFosters';
 import './DogsRescueFostersPage.css';
 
 export function DogsRescueFostersPage() {

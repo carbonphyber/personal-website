@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 
 import './index.css';
-import { AppRoutes } from './App';
+import { AppRoutes } from './AppRoutes';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
@@ -11,7 +11,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <HashRouter hashType="slash">
-      <App />
+      <AppRoutes />
     </HashRouter>
   </React.StrictMode>
 );

@@ -1,12 +1,12 @@
 /* eslint-env browser */
 import { Route, Routes } from 'react-router';
 
-import { CharitiesPage } from './CharitiesPage';
-import { DogsJacquesPage } from './DogsJacquesPage';
-import { DogsRescueFostersPage } from './DogsRescueFostersPage';
-import { HomePage } from './HomePage';
-import { ProgrammingWebdevPage } from './ProgrammingWebdevPage';
-import { ResourcesPage } from './ResourcesPage';
+import { CharitiesPage } from './pages/CharitiesPage';
+import { DogsJacquesPage } from './pages/DogsJacquesPage';
+import { DogsRescueFostersPage } from './pages/DogsRescueFostersPage';
+import { HomePage } from './pages/HomePage';
+import { ProgrammingWebdevPage } from './pages/ProgrammingWebdevPage';
+import { ResourcesPage } from './pages/ResourcesPage';
 
 import './App.css';
 

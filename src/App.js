@@ -10,9 +10,9 @@ import { ProgrammingWebdevPage } from './ProgrammingWebdevPage';
 
 import './App.css';
 
-function ResourcesPage() {
+export function ResourcesPage() {
   return (
-    <div class="container">
+    <div className="container">
       <h1>Resources</h1>
     </div>
   );

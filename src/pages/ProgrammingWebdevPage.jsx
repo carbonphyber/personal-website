@@ -1,16 +1,22 @@
 /* eslint-env browser */
 import React from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 export function ProgrammingWebdevPage() {
   return (
-    <div className="container">
+    <Container maxWidth="lg">
       <header>
-        <h1>Programming Tools for Web Developers</h1>
+        <Typography variant="h2" component="h1">
+          Programming Tools for Web Developers
+        </Typography>
         <p>If you program for a living (or for fun), you should aim to craft secure and quality code. These resources will help in that endeavor.</p>
       </header>
 
       <section>
-        <h2>Secure Programming Guidelines</h2>
+        <Typography variant="h3" component="h2">
+          Secure Programming Guidelines
+        </Typography>
         <ul>
           <li>
             <a href="https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf" rel="noopener noreferrer">Open Web Application Security Project (OWASP) Top 10</a> list of most common programming vulnerabilities. Be sure to learn what mistakes <em>not</em> to make.
@@ -47,7 +53,9 @@ export function ProgrammingWebdevPage() {
       </section>
 
       <section>
-        <h2>Program Testing</h2>
+        <Typography variant="h3" component="h2">
+          Program Testing
+        </Typography>
         <ul>
           <li>
             <a href="https://www.ssllabs.com/ssltest/analyze.html" rel="noopener noreferrer">SSL Labs: SSL/TLS Server Configuration Tester</a>
@@ -65,7 +73,9 @@ export function ProgrammingWebdevPage() {
       </section>
 
       <section>
-        <h2>Code Quality Checkers</h2>
+        <Typography variant="h3" component="h2">
+          Code Quality Checkers
+        </Typography>
         <p>Integrate these into your build/CI system and ensure your code has a quality gate.</p>
         <ul>
           <li>
@@ -97,7 +107,9 @@ export function ProgrammingWebdevPage() {
       </section>
 
       <section>
-        <h2>Continuous Integration and Continuous Deployment (CI/CD)</h2>
+        <Typography variant="h3" component="h2">
+          Continuous Integration and Continuous Deployment (CI/CD)
+        </Typography>
         <p>Tools and procedures which support automating repetitive tasks related to code review, source control, and deployment.</p>
         <ul>
           <li>
@@ -110,13 +122,15 @@ export function ProgrammingWebdevPage() {
       </section>
 
       <section>
-        <h2>Best Practices Application Development</h2>
+        <Typography variant="h3" component="h2">
+          Best Practices Application Development
+        </Typography>
         <ul>
           <li>
             <a href="https://12factor.net/">12 Factor Application design</a>. Factors which describe robust, sustainable high quality web applications.
           </li>
         </ul>
       </section>
-    </div>
+    </Container>
   );
 }

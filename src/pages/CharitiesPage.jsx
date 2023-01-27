@@ -1,5 +1,7 @@
 /* eslint-env browser */
 import React from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 import { shuffle } from '../utils';
 
@@ -50,10 +52,14 @@ const charitiesList = [
 export function CharitiesPage() {
   const data = shuffle(charitiesList);
   return (
-    <div className="container">
-      <h1>Charities</h1>
+    <Container maxWidth="lg">
+      <Typography variant="h2" component="h1">
+        Charities
+      </Typography>
 
-      <p className="lead">David supports these charities. You should consider doing the same.</p>
+      <p className="lead">
+        David supports these charities. You should consider doing the same.
+      </p>
 
       <div>
         <ul>
@@ -66,6 +72,6 @@ export function CharitiesPage() {
           ))}
         </ul>
       </div>
-    </div>
+    </Container>
   );
 }

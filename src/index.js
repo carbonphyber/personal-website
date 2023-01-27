@@ -1,18 +1,24 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import './index.css';
 import { AppRoutes } from './AppRoutes';
 import reportWebVitals from './reportWebVitals';
 
+const customTheme = createTheme({
+});
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <HashRouter hashType="slash">
-      <AppRoutes />
-    </HashRouter>
+    <ThemeProvider theme={customTheme}>
+      <HashRouter hashType="slash">
+        <AppRoutes />
+      </HashRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

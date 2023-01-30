@@ -26,9 +26,12 @@ export function CodeSnippetCard({ text }) {
   const textRef = useRef(null);
   const [isHighlighted, setIsHighlighed] = useState();
   const [isSnackbarShown, setIsSnackbarShown] = useState();
+
   const handleClick = async (evt) => {
+    const textArray = [];
+
     try {
-      await navigator.clipboard.writeText(textRef.current.innerText);
+      await navigator.clipboard.writeText(textRef.current.textContent);
     } catch (err) {
       console.error('Failed to copy: ', err);
     }

@@ -37,7 +37,6 @@ export function CodeSnippetCard({ text }) {
     setIsSnackbarShown(true);
   };
 
-
   useEffect(() => {
     if (!isHighlighted) {
       return undefined;

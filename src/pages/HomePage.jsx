@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 import { CodeSnippetCard } from '../CodeSnippetCard';
+import { scrollIntoViewOfLinkAnchor } from '../domUtils';
 
 export function HomePage() {
   return (
@@ -95,16 +96,24 @@ export function HomePage() {
 
         <ol>
           <li>
-            <a href="#projects--kryptos">CIA Kryptos Scupture</a>
+            <a href="#projects--kryptos" onClick={scrollIntoViewOfLinkAnchor}>
+              CIA Kryptos Scupture
+            </a>
           </li>
           <li>
-            <a href="#projects--best-cheap-dog-food">Best Cheap Dog Food</a>
+            <a href="#projects--best-cheap-dog-food" onClick={scrollIntoViewOfLinkAnchor}>
+              Best Cheap Dog Food
+            </a>
           </li>
           <li>
-            <a href="#projects--dog-rescue-fostering">Dog Rescue Fostering</a>
+            <a href="#projects--dog-rescue-fostering" onClick={scrollIntoViewOfLinkAnchor}>
+              Dog Rescue Fostering
+            </a>
           </li>
           <li>
-            <a href="#projects--news-feed">News Feed project</a>
+            <a href="#projects--news-feed" onClick={scrollIntoViewOfLinkAnchor}>
+              News Feed project
+            </a>
           </li>
         </ol>
 

@@ -28,8 +28,6 @@ export function CodeSnippetCard({ text }) {
   const [isSnackbarShown, setIsSnackbarShown] = useState();
 
   const handleClick = async (evt) => {
-    const textArray = [];
-
     try {
       await navigator.clipboard.writeText(textRef.current.textContent);
     } catch (err) {
